@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Installing themes of ohmyzsh
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH/custom/plugins/zsh-syntax-highlighting
 
 # Replace on plugins in .zshrc
 cat ~/.zshrc | sed -e s/"plugins=(git)"/"plugins=(git zsh-autosuggestions zsh-syntax-highlighting)"/g > ~/.zshrc-update
